@@ -1,0 +1,18 @@
+{
+    "name": "2x-acelerate",
+    "version": "1.0",
+    "description": "Acelera audios do whatsapp e videos do youtube.      E bom para pular anuncios longos.",
+    "manifest_version":2,
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/"],
+            "css":["manifest.css"],
+            "js": ["zap.js"]
+        },
+        {
+            "matches": ["https://www.youtube.com/"],
+            "css":["style.css"],
+            "js":["code.js"]
+        }
+    ]
+}
